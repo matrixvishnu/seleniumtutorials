@@ -1,0 +1,77 @@
+\documentclass[12pt, oneside]{article}
+\usepackage[a6paper,margin=5mm]{geometry}
+\usepackage{blindtext}
+\title{Manual testing interview questions}
+\begin{document}
+\author{Vishnu}
+\maketitle
+\section{Bug life cycle}
+\begin{itemize}
+
+\item New: When a new defect is logged and posted for the first time. 
+    It is assigned as NEW.
+\item Assigned: Once the bug is posted by the tester, 
+    the lead of the tester approves the bug and assigns the 
+    bug to the development team
+\item Duplicate: If the defect is repeated twice or the defect 
+    corresponds to the same concept of the bug, 
+    the status is changed to "duplicate."
+\item Rejected: If the developer feels the defect is not a genuine defect then it changes the defect to "rejected."
+\item Deferred: If the present bug is not of a prime priority and if it is expected to get fixed in the next release, then status "Deferred" is assigned to such bugs
+\item Not a bug:If it does not affect the functionality of the application then the status assigned to a 
+\item Open: The developer starts analyzing and works on the defect fix
+\item Fixed: When a developer makes a necessary code change and verifies the change, he or she can make bug status as "Fixed."
+\item Pending retest: Once the defect is fixed the developer gives a particular code for retesting the code to the tester. Since the software testing remains pending from the testers end, the status assigned is "pending request."
+\item Retest: Tester does the retesting of the code at this stage to check whether the defect is fixed by the developer or not and changes the status to "Re-test."
+\item Verified: The tester re-tests the bug after it got fixed by the developer. If there is no bug detected in the software, then the bug is fixed and the status assigned is "verified."
+\item Reopen: If the bug persists even after the developer has fixed the bug, the tester changes the status to "reopened". Once again the bug goes through the life cycle.
+\item Closed: If the bug is no longer exists then tester assigns the status "Closed." 
+\end{itemize}
+\section{Bug reporting}
+
+\section{Bug severity}
+Severity is defined as the degree of impact a Defect has on the development or operation of a component application being tested.
+Types:Critical,Major, Medium, Low
+
+\section{Bug priority}
+
+Priority is defined as the order in which a defect should be fixed. Higher the priority the sooner the defect should be resolved.
+Types:High, Medium, Low
+
+\section{High priority low severity}
+Ex:Report Name is wrong 
+
+\section{Low priority high severity}
+Ex:Date picker allows future dates to be entered in all reports
+\section{Can we write test case with out use case document} 
+
+
+\section{Black box testing methodology}
+Black Box Testing is a software testing method in which the internal structure/ design/ implementation of the item being tested is NOT known to the tester
+
+The following are various blackbox testing methodologies
+
+\begin{itemize}
+    \item Boundary value Analysis
+    \subitem Boundary testing is the process of testing between extreme ends or boundaries between partitions of the input values.
+    \subitem So these extreme ends like Start- End, Lower- Upper, Maximum-Minimum, Just Inside-Just Outside values are called boundary values and the testing is called "boundary testing".
+    \item Equivalent Partitioning 
+
+\end{itemize}
+\section{White box testing methodology}
+
+\section{Difference between retesting and regression testing}
+\subsection{Re-Testing:}
+After a defect is detected and fixed, the software should be retested to confirm that the original defect has been successfully removed. This is called Confirmation Testing or Re-Testing
+\subsection{Regression testing:}
+Testing your software application when it undergoes a code change to ensure that the new code has not affected other parts of the software.
+
+\section{Data driven testing:}
+Different data set is feeded for same script for different scenarios
+Ex:Book Appointment -->script
+Book appointment for different departments -->scenario
+we will feed separate data set for each department for same script
+
+
+
+\end{document}

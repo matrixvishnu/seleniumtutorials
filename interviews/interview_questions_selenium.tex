@@ -1,0 +1,39 @@
+\documentclass[12pt, oneside]{article}
+\usepackage[a4paper,bindingoffset=0.2in,%
+            left=.5in,right=.5in,top=.5in,bottom=.5in,%
+            footskip=.25in]{geometry}
+\usepackage{blindtext}
+\title{\bf Selenium Automation interview questions}
+\begin{document}
+\author{Vishnu}
+\maketitle
+\section{Dynamic Xpath Usage:}
+
+\begin{itemize}
+    \item Dynamic XPATH is used when the locator is changing  
+    \item Ex id is name with time stamp in this case the locator will be changing continuously.
+    \item To handle this we have to use dynamic xpath
+    \item $Xpath = //tagname[@attribute='value']$
+        \subitem Attributes are 
+        \subitem Id
+        \subitem name
+        \subitem calssname
+        \subitem linktext
+        \subitem partiallinktext
+    \item \textbf{Contains()}
+        \subitem contains() is used when a partial attribute is available
+        \subitem If $id=name+timestamp$ like user20:18:2019
+        \subitem $Xpath=//tagname[contains(@id,'user')]$
+    \item \textbf{Text()}
+        \subitem text() is used when visible text of the locator is available
+        \subitem $Xpath=//tagname[text()='UserID']$
+    \item \textbf{starts-with()}
+        \subitem For example -: Suppose the ID of particular element changes 
+        dynamically like: 
+        Id=" message12"
+        Id=" message345"
+        Id=" message8769"
+        \subitem $Xpath=//label[starts-with(@id,'message')]$
+\end{itemize}
+
+\end{document}
